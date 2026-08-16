@@ -1,0 +1,12 @@
+<div class="box large-text">
+	<span id="targeted-sentence">{{Sentence}}</span>
+</div>
+
+
+<script>
+	var expression = "{{Expression}}".replace(/\[.*?\]/g, "");
+	var targetedSentence = document.getElementById("targeted-sentence");
+	
+	if (expression)
+		targetedSentence.innerHTML = targetedSentence.innerHTML.replaceAll(expression, "<b>" + expression + "</b>");
+</script>

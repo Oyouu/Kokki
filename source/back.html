@@ -1,0 +1,28 @@
+<div id="back">
+	<div id="illustrated-expression">
+		<div class="box">
+			<b class="large-text">{{furigana:Expression}}</b>
+			{{PitchAccent}}
+		</div>
+
+		<div>
+			{{Image}}
+		</div>
+	</div>
+
+	<span id="targeted-sentence">{{Sentence}}</span>
+
+	{{Audio}}
+	
+	<div class="highlighted-box small-text">
+		{{Definition}}
+	</div>
+</div>
+
+<script>
+	var expression = "{{Expression}}".replace(/\[.*?\]/g, "");
+	var targetedSentence = document.getElementById("targeted-sentence");
+	
+	if (expression)
+		targetedSentence.innerHTML = targetedSentence.innerHTML.replaceAll(expression, "<b>" + expression + "</b>");
+</script>

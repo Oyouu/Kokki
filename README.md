@@ -20,6 +20,8 @@ This usually happens with verb conjugations. (する won't be recognized if し�
 
 If you prefer expression/word cards, you can easily replace the line which contains {{Sentence}} by {{Expression}} on the front card.
 
+Kokki is responsive, it adapts its layout to multiple screen sizes (desktop, mobile, etc.).
+
 By default Kokki features 7 fields:
 - Expression: Expression/word you work on. This is the sort field (The field Anki uses to identify a note and check if it has duplicates)
 - PitchAccent: Variations of the pitch when pronouncing the expression
